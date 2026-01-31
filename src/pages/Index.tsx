@@ -10,6 +10,7 @@ import { InfrastructureChart } from '@/components/dashboard/InfrastructureChart'
 import { PolicyImpactChart } from '@/components/dashboard/PolicyImpactChart';
 import { InsightsPanel } from '@/components/dashboard/InsightsPanel';
 import { LoadingState } from '@/components/dashboard/LoadingState';
+import { StrategyPredictorDashboard } from '@/components/dashboard/strategy/StrategyPredictorDashboard';
 
 const Index = () => {
   const {
@@ -135,6 +136,11 @@ const Index = () => {
               segmentStats={segmentStats}
             />
           </div>
+        </section>
+
+        {/* Strategy Predictor Dashboard */}
+        <section className="mb-8 pt-8 border-t border-border">
+          <StrategyPredictorDashboard />
         </section>
 
         {/* Footer */}
